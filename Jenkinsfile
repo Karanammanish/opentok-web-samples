@@ -5,9 +5,14 @@ pipeline {
         NodeJs "NJS"
     }
     stages {
-        stage('Build') { 
+        stage('NPM-Dependency') { 
             steps {
-                sh 'npm config ls' 
+                sh 'npm install' 
+            }
+        }
+        stage('Build'){
+            steps{
+                sh 'npm config ls'
             }
         }
     }
