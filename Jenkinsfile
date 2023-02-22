@@ -2,7 +2,7 @@
 pipeline {
     agent any
     tools{
-        NodeJs "NJS"
+        nodejs "NJS"
     }
     stages {
         stage('NPM-Dependency') { 
