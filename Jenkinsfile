@@ -8,7 +8,7 @@ pipeline {
         stage('NPM-Dependency') { 
             steps {
                 sh 'ldd --version'
-                sh 'npm install 16' 
+                sh 'npm install' 
             }
         }
         stage('Build'){
