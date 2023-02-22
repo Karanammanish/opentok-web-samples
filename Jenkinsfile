@@ -2,7 +2,7 @@
 pipeline {
     agent any
     tools{
-        NodeJs "NPM"
+        NodeJs "NJS"
     }
     stages {
         stage('Build') { 
