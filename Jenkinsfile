@@ -3,16 +3,12 @@ pipeline {
     agent any
     tools{
         nodejs "NJS"
+        //
     }
     stages {
-        stage('NPM-Dependency') { 
+        stage('BLUID') { 
             steps {
                 sh 'npm install' 
-            }
-        }
-        stage('Build'){
-            steps{
-                sh 'npm config ls'
             }
         }
     }
