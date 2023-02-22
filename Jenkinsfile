@@ -2,7 +2,7 @@
 pipeline {
     agent any
     tools{
-        nodejs "NJS"
+        nodejs "node"
         // Nodejs and npm should be there in our local machine
     }
     stages {
