@@ -8,7 +8,6 @@ pipeline {
         stage('NPM-Dependency') { 
             steps {
                 sh 'ldd --version'
-                sh 'cd /var/lib/jenkins/workspace/test1/package.json'
                 sh 'npm install' 
             }
         }
